@@ -30,7 +30,7 @@ titles.style.display = "flex";
 matches_div.style.display = "none";
 
 
-fetch("http://api.football-data.org/v2/competitions/2015/teams?season=2021", {
+fetch("https://api.football-data.org/v2/competitions/2015/teams?season=2021", {
 	headers: {
 		"X-Auth-Token": "444a1040a7064b31a3cff38528ce9cb7"
 	}
@@ -87,7 +87,7 @@ fetch("http://api.football-data.org/v2/competitions/2015/teams?season=2021", {
 				name2.textContent = element.name;
 				logo2.src = element.crestUrl;
 
-				fetch("http://api.football-data.org/v2/teams/" + element.id + "/matches?status=SCHEDULED&competitions=2015", {
+				fetch("https://api.football-data.org/v2/teams/" + element.id + "/matches?status=SCHEDULED&competitions=2015", {
 					headers: {
 						"X-Auth-Token": "444a1040a7064b31a3cff38528ce9cb7"
 					}
@@ -107,7 +107,7 @@ fetch("http://api.football-data.org/v2/competitions/2015/teams?season=2021", {
 
 					})
 
-				fetch("http://api.football-data.org/v2/teams/" + element.id + "/matches?status=FINISHED&competitions=2015", {
+				fetch("https://api.football-data.org/v2/teams/" + element.id + "/matches?status=FINISHED&competitions=2015", {
 					headers: {
 						"X-Auth-Token": "444a1040a7064b31a3cff38528ce9cb7"
 					}
