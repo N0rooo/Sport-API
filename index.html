@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Sport Api</title>
+</head>
+
+<body>
+    <section>
+        <div class="title_top">
+            <h1>Ligue 1 & NBA</h1>
+            <h3>by Thomas Aubert</h3>
+        </div>
+        <div id="titles" class="titles">
+            <h2 id="btn_foot" class=" selected">Ligue 1</h2>
+            <h2 id="btn_nba">NBA</h2>
+        </div>
+        <section class="content_all">
+
+            <article id="foot" class="foot">
+                <p id="go_back_t">
+                    <- Go back to teams</p>
+                        <div id="foot_content" class="foot_content">
+
+                            <div id="teams" class="teams"></div>
+                            <div id="infos" class="infos">
+                            </div>
+                            <div id="scheduled_match"></div>
+                            <div id="matches" class="matchs">
+                                <h1>Results</h1>
+                                <div id="match_results" class="players_b"></div>
+                            </div>
+
+                        </div>
+            </article>
+            <article id="bskt" class="bskt">
+                <p id="go_back_b">
+                    <- Go back to teams</p>
+                        <p id="go_back_b_2"></p>
+                        <div id="bskt_content" class="bskt_content">
+                            <div id="teams_b" class="teams"></div>
+                            <div class="infos_parent">
+                                <div id="infos_b" class="infos">
+                                </div>
+                                <div id="current_players" class="players">
+                                    <h1>Current Players</h1>
+                                    <div id="players_b" class="players_b"></div>
+                                </div>
+                            </div>
+                            <div id="players_infos" class="players_infos">
+                                <h1 id="player_name"></h1>
+                                <div class="flex">
+                                    <div id="players_desc" class="players_desc"></div>
+                                    <div id="players_news" class="players_news"></div>
+                                </div>
+                            </div>
+
+            </article>
+        </section>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

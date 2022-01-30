@@ -1,0 +1,13 @@
+$xl: 991px;
+
+@mixin mobile{
+    @media screen and (max-width:$xl){
+        @content;
+    }
+
+}
+@mixin pc{
+    @media screen and (min-width:$xl){
+        @content;
+    }
+}

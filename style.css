@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #10111e;
+  overflow-x: hidden;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+}
+.titles h2 {
+  padding: 1vh 2vw;
+  margin: 0 1vw;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 3vh;
+}
+.titles h2:hover {
+  transform: scaleX(1.05);
+  background-color: rgba(108, 95, 159, 0.496);
+}
+
+.content_all {
+  display: flex;
+  width: 200vw;
+}
+
+.foot,
+.bskt {
+  display: flex;
+  margin: 2% 5%;
+  transition: transform 1s;
+  width: 80vw;
+}
+
+.hidden {
+  transform: translateX(-200vw);
+  transition: transform 1s;
+}
+
+.hidden_bskt {
+  transform: translateX(100vw);
+  transition: transform 1s;
+}
+
+.here {
+  transform: translateX(-100vw);
+  transition: transform 1s;
+}
+
+#go_back_t,
+#go_back_b, #go_back_b_2 {
+  text-align: center;
+  font-size: 3vh;
+  padding: 2vh;
+  cursor: pointer;
+}
+
+.infos_parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos {
+  display: flex;
+  font-size: 2.5vh;
+}
+.infos .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5vw;
+  line-height: 150%;
+}
+.infos .others_infos {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10vh;
+  line-height: 150%;
+}
+.infos img {
+  height: 35vh;
+}
+
+.matchs h1 {
+  font-size: 3vh;
+  padding: 5vh;
+}
+
+#scheduled_match {
+  font-size: 4vh;
+}
+
+.all_matchs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.all_matchs div {
+  width: 25vw;
+  padding: 5vh 10vh;
+  box-shadow: rgba(74, 69, 94, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  .all_matchs div {
+    height: 30vh;
+  }
+}
+.all_matchs div p {
+  margin: 1vh;
+}
+.all_matchs div .matchday {
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+}
+.all_matchs div .date_f {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+}
+
+#last_scores h1 {
+  font-size: 3vh;
+  padding: 5vh;
+}
+
+.players {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+.players h1 {
+  font-size: 3vh;
+  padding: 5vh;
+}
+
+.each_players_b {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.each_players_b div {
+  margin: 1vw 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.each_players_b div p {
+  padding: 2vh;
+}
+
+.selected {
+  background-color: #2a2347;
+}
+.selected:hover {
+  transform: none !important;
+  background-color: #2a2347 !important;
+}
+
+.title_top {
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title_top h1 {
+  text-align: center;
+  font-size: 8vh;
+  padding: 2vh;
+}
+.title_top h3 {
+  text-align: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot_content,
+.bskt_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  margin: 0.5vw 0.5vw;
+  cursor: pointer;
+  box-shadow: rgba(74, 69, 94, 0.2) 0px 8px 24px;
+  padding: 2%;
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5vh;
+  transition: 0.3s;
+}
+.div:hover {
+  transform: scale(1.05);
+  background-color: #2a2347;
+}
+.div > img {
+  max-width: 100%;
+  height: 80%;
+}
+.div .name {
+  text-align: center;
+}
+
+.players_infos {
+  display: flex;
+  flex-direction: column;
+}
+
+#player_name {
+  font-size: 5vh;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+
+.players_desc, .players_news {
+  width: 50%;
+}
+
+.info_players_b {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info_players_b:hover {
+  transform: scale(1.2);
+}
+
+.player_left {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vh;
+}
+.player_left p {
+  padding: 1vh;
+}
+.player_left img {
+  height: 20vh;
+  margin-bottom: 2vh;
+}
+
+.player_right {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vh;
+}
+.player_right p {
+  padding: 1vh;
+  line-height: 150%;
+}
+.player_right h2 {
+  font-size: 4vh;
+  margin-bottom: 3vh;
+}
+
+.flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
